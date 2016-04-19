@@ -10,6 +10,8 @@
 		A85365901CC6516B00AD2D9C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = A853658F1CC6516B00AD2D9C /* main.c */; };
 		A85365981CC6519C00AD2D9C /* cor_api.c in Sources */ = {isa = PBXBuildFile; fileRef = A85365961CC6519C00AD2D9C /* cor_api.c */; };
 		A853659B1CC651AA00AD2D9C /* cor_comm.c in Sources */ = {isa = PBXBuildFile; fileRef = A85365991CC651AA00AD2D9C /* cor_comm.c */; };
+		A853659E1CC6554C00AD2D9C /* cor_map.c in Sources */ = {isa = PBXBuildFile; fileRef = A853659C1CC6554C00AD2D9C /* cor_map.c */; };
+		A85365A11CC65F3500AD2D9C /* test.c in Sources */ = {isa = PBXBuildFile; fileRef = A85365A01CC65F3500AD2D9C /* test.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,9 @@
 		A85365971CC6519C00AD2D9C /* cor_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cor_api.h; sourceTree = "<group>"; };
 		A85365991CC651AA00AD2D9C /* cor_comm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cor_comm.c; sourceTree = "<group>"; };
 		A853659A1CC651AA00AD2D9C /* cor_comm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cor_comm.h; sourceTree = "<group>"; };
+		A853659C1CC6554C00AD2D9C /* cor_map.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cor_map.c; sourceTree = "<group>"; };
+		A853659D1CC6554C00AD2D9C /* cor_map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cor_map.h; sourceTree = "<group>"; };
+		A85365A01CC65F3500AD2D9C /* test.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = test.c; path = test/test.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +52,7 @@
 		A85365831CC6516B00AD2D9C = {
 			isa = PBXGroup;
 			children = (
+				A853659F1CC65F1100AD2D9C /* Test */,
 				A853658E1CC6516B00AD2D9C /* COR-Framework-C */,
 				A853658D1CC6516B00AD2D9C /* Products */,
 			);
@@ -68,8 +74,18 @@
 				A85365971CC6519C00AD2D9C /* cor_api.h */,
 				A85365991CC651AA00AD2D9C /* cor_comm.c */,
 				A853659A1CC651AA00AD2D9C /* cor_comm.h */,
+				A853659C1CC6554C00AD2D9C /* cor_map.c */,
+				A853659D1CC6554C00AD2D9C /* cor_map.h */,
 			);
 			path = "COR-Framework-C";
+			sourceTree = "<group>";
+		};
+		A853659F1CC65F1100AD2D9C /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				A85365A01CC65F3500AD2D9C /* test.c */,
+			);
+			name = Test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A85365A11CC65F3500AD2D9C /* test.c in Sources */,
 				A853659B1CC651AA00AD2D9C /* cor_comm.c in Sources */,
 				A85365901CC6516B00AD2D9C /* main.c in Sources */,
 				A85365981CC6519C00AD2D9C /* cor_api.c in Sources */,
+				A853659E1CC6554C00AD2D9C /* cor_map.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
