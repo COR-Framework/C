@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A85365901CC6516B00AD2D9C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = A853658F1CC6516B00AD2D9C /* main.c */; };
 		A85365981CC6519C00AD2D9C /* cor_api.c in Sources */ = {isa = PBXBuildFile; fileRef = A85365961CC6519C00AD2D9C /* cor_api.c */; };
 		A853659B1CC651AA00AD2D9C /* cor_comm.c in Sources */ = {isa = PBXBuildFile; fileRef = A85365991CC651AA00AD2D9C /* cor_comm.c */; };
 		A853659E1CC6554C00AD2D9C /* cor_map.c in Sources */ = {isa = PBXBuildFile; fileRef = A853659C1CC6554C00AD2D9C /* cor_map.c */; };
@@ -28,7 +27,6 @@
 
 /* Begin PBXFileReference section */
 		A853658C1CC6516B00AD2D9C /* COR-Framework-C */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "COR-Framework-C"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A853658F1CC6516B00AD2D9C /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		A85365961CC6519C00AD2D9C /* cor_api.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cor_api.c; sourceTree = "<group>"; };
 		A85365971CC6519C00AD2D9C /* cor_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cor_api.h; sourceTree = "<group>"; };
 		A85365991CC651AA00AD2D9C /* cor_comm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cor_comm.c; sourceTree = "<group>"; };
@@ -69,7 +67,6 @@
 		A853658E1CC6516B00AD2D9C /* COR-Framework-C */ = {
 			isa = PBXGroup;
 			children = (
-				A853658F1CC6516B00AD2D9C /* main.c */,
 				A85365961CC6519C00AD2D9C /* cor_api.c */,
 				A85365971CC6519C00AD2D9C /* cor_api.h */,
 				A85365991CC651AA00AD2D9C /* cor_comm.c */,
@@ -146,7 +143,6 @@
 			files = (
 				A85365A11CC65F3500AD2D9C /* test.c in Sources */,
 				A853659B1CC651AA00AD2D9C /* cor_comm.c in Sources */,
-				A85365901CC6516B00AD2D9C /* main.c in Sources */,
 				A85365981CC6519C00AD2D9C /* cor_api.c in Sources */,
 				A853659E1CC6554C00AD2D9C /* cor_map.c in Sources */,
 			);
@@ -269,6 +265,7 @@
 				A85365951CC6516B00AD2D9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

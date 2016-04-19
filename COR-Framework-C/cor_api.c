@@ -14,11 +14,16 @@ cor_module *cor_create_module(){
 	module->message_handlers = cor_map_create();
 	module->message_types = cor_map_create();
 	module->message_in = cor_message_in;
+	module->network_adapter = cor_create_adapter(module);
 	return module;
 }
 
 void cor_add_topic(cor_module *module, char *type, cor_handler handle){
 	cor_map_set(module->message_handlers, type, handle);
+}
+
+void cor_register_type(cor_module *module, char *type, cor_type_callback callback){
+	cor_map_set(module->message_types, type, callback);
 }
 
 void cor_message_in(cor_module *module, char *type, void *message){
@@ -31,7 +36,7 @@ void cor_message_out(cor_module *module, char *type, void *message){
 	na->message_out(na->original_adapter, type, message);
 }
 
-cor_network_adapter *create_adapter(cor_module *module){
+cor_network_adapter *cor_create_adapter(cor_module *module){
 	cor_network_adapter *adapter = malloc(sizeof(cor_network_adapter));
 	adapter->module = module;
 	adapter->message_in = module->message_in;

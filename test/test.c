@@ -12,6 +12,8 @@
 
 int main(int argc, char* argv[]){
 	cor_module *requester = cor_create_module();
-	requester->network_adapter = cor_create_adapter(requester);
-	cor_callback_adapter *callback = cor_callback_create(requester->network_adapter);
+	cor_callback_adapter *requester_adapter = cor_callback_create(requester->network_adapter);
+	
+	cor_module *responder = cor_create_module();
+	cor_callback_adapter *responder_adapter = cor_callback_create(responder->network_adapter);
 }
