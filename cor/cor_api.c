@@ -28,7 +28,7 @@ void cor_register_type(cor_module *module, char *type, cor_type_callback callbac
 
 void cor_message_in(cor_module *module, char *type, void *message){
 	cor_handler handler = cor_map_get(module->message_handlers, type);
-	handler(message);
+	handler(type, message);
 }
 
 void cor_message_out(cor_module *module, char *type, void *message){
